@@ -48,7 +48,8 @@ xmlns:app="http://schemas.android.com/tools">
 			android:title="@string/presets_list_title"
 			android:entries="@array/presets_entries"
 			android:entryValues="@array/presets_values" 
-            android:defaultValue="0"/>
+            android:defaultValue="0"
+            android:summary="%s" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="@string/category_screen_color" 
