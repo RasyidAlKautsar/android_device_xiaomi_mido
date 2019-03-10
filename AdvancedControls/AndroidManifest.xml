@@ -13,6 +13,7 @@
     <application
         android:label="@string/advanced_settings"
         android:icon="@drawable/launcher"
+        android:icon="@drawable/ic_launcher_advc"
         android:theme="@android:style/Theme.DeviceDefault.Settings"
         android:supportsRtl="true" >
         <activity
