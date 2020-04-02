@@ -1,2 +1,5 @@
 allow platform_app hal_alarm_qti_default:binder call;
 allow platform_app hal_alarm_qti_hwservice:hwservice_manager find;
+
+# FPS
+allow platform_app sysfs_fps:file { getattr open read };
