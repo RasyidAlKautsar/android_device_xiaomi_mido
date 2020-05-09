@@ -28,6 +28,8 @@ import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.preferences.FileUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
 import org.lineageos.settings.torch.TorchSettings;
+import org.lineageos.settings.thermal.ThermalUtils;
+
 
 public class BootCompletedReceiver extends BroadcastReceiver implements Controller {
 
@@ -81,5 +83,7 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
             FileUtils.setValue(KCAL_HUE, Settings.Secure.getInt(context.getContentResolver(),
                     PREF_HUE, HUE_DEFAULT));
         }
+        if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        ThermalUtils.startService(context);
     }
 }
