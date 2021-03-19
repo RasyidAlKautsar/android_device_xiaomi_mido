@@ -50,7 +50,7 @@ public class VibratorStrengthPreference extends SeekBarDialogPreference implemen
     private Button mMinusOneButton;
     private Button mRestoreDefaultButton;
 
-    private static final String FILE_LEVEL = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
+    private static final String FILE_LEVEL = "/sys/class/leds/vibrator/vmax_mv";
     private static final long testVibrationPattern[] = {0,250};
     private static final int DEFAULT_VALUE = 2873;
 

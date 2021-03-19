@@ -45,3 +45,5 @@ type sysfs_battery_saver, fs_type, sysfs_type;
 
 #Netmgr
 type netmgr_data_file, file_type, data_file_type;
+
+type hal_qspmhal_default_exec, exec_type, file_type, vendor_file_type;

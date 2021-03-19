@@ -46,7 +46,7 @@ public class WhiteTorchBrightnessPreference extends SeekBarDialogPreference impl
     private Button mMinusOneButton;
     private Button mRestoreDefaultButton;
 
-    private static final String FILE_BRIGHTNESS = "/sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness";
+    private static final String FILE_BRIGHTNESS = "/sys/class/leds/led:torch_0/max_brightness";
     private static final int DEFAULT_VALUE = 200;
 
     public WhiteTorchBrightnessPreference(Context context, AttributeSet attrs) {
