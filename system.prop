@@ -37,6 +37,7 @@ persist.vendor.data.mode=concurrent
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+vendor.display.idle_time=32767
 debug.cpurend.vsync=false
 debug.egl.hw=0
 debug.enable.sglscale=1
