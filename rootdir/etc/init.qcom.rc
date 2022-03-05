@@ -464,3 +464,26 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
 
 on property:hw.fm.init=*
     write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
+
+# Memory Management fixed
+on property:sys.boot_completed=1
+    chown system system /proc/sys/vm/swappiness
+    write /proc/sys/vm/swappiness 100
+    chown system system /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 0
+    chown system system /proc/sys/vm/vfs_cache_pressure
+    write /proc/sys/vm/vfs_cache_pressure 100
+    chown system system /sys/block/mmcblk0/queue/read_ahead_kb
+    write /sys/block/mmcblk0/queue/read_ahead_kb 128
+    chown system system /sys/block/mmcblk1/queue/read_ahead_kb
+    write /sys/block/mmcblk1/queue/read_ahead_kb 128
+    chown system system /proc/sys/vm/min_free_kbytes
+    write /proc/sys/vm/min_free_kbytes 8000
+    chown system system /proc/sys/vm/oom_kill_allocating_task
+    write /proc/sys/vm/oom_kill_allocating_task 0
+    chown system system /proc/sys/vm/dirty_ratio
+    write /proc/sys/vm/dirty_ratio 5
+    chown system system /proc/sys/vm/dirty_background_ratio
+    write /proc/sys/vm/dirty_background_ratio 20
+    chown system system /sys/module/lowmemorykiller/parameters/minfree
+    write /sys/module/lowmemorykiller/parameters/minfree 21816,29088,36360,43632,50904,65448
