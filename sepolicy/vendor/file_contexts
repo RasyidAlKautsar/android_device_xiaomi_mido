@@ -67,10 +67,3 @@
 
 # Insmod
 /(vendor|system/vendor)/bin/init\.insmod\.sh u:object_r:init-insmod-sh_exec:s0
-
-# AC Torch
-/sys/class/leds/led:torch_0/max_brightness    u:object_r:sysfs_torch:s0
-/sys/class/leds/led:torch_1/max_brightness    u:object_r:sysfs_torch:s0
-
-# AC Vibration
-/sys/class/leds/vibrator/vmax_mv    u:object_r:sysfs_vibrator:s0
