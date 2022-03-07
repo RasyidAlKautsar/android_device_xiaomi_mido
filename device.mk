@@ -182,10 +182,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi_mido
 
-$(call inherit-product, $(LOCAL_PATH)/qcom-caf/display/display-commonsys/config/display-product-commonsys.mk)
-$(call inherit-product, $(LOCAL_PATH)/qcom-caf/display/display-commonsys-intf/config/display-interfaces-product.mk)
-$(call inherit-product, $(LOCAL_PATH)/qcom-caf/display/display-commonsys-intf/config/display-product-system.mk)
-
 # Display
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
@@ -532,11 +528,3 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     Settings \
     SystemUI
-
-# Enable gestural navigation overlay to match default navigation mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
-# ROGCamera Port
-PRODUCT_PACKAGES += \
-    ROGCamera
