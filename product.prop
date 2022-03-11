@@ -4,3 +4,7 @@
 
 # Default to BFQ I/O scheduler
 #persist.sys.io.scheduler=bfq
+
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
