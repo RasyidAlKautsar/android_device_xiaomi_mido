@@ -570,4 +570,9 @@
          sdk/src/java/org/lineageos/internal/util/DeviceKeysConstan.ts.java.
     -->
     <integer name="config_longPressOnAppSwitchBehavior">9</integer>
+
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
+
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+
 </resources>
