@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2017 The LineageOS Project
 #
@@ -44,6 +45,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-keys"
 
 # CherishOS Official
-CHERISH_BUILD_TYPE := OFFICIAL
+CHERISH_BUILD_TYPE := WEEKLIES
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=RasyidAlKautsar
